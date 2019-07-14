@@ -1,10 +1,18 @@
 \documentclass[a4paper,12pt]{article}
 
-\setlength{\parindent}{1.2cm}
-\setlength{\parskip}{.2cm}
-\setlength{\oddsidemargin}{0.5cm}    % Há um offset obrigatorio de
-\setlength{\evensidemargin}{0.0cm}   % 1 inch do lado esquerdo e no
-\setlength{\topmargin}{-1.2cm}       % topo da folha
+%	-----------------------------------------------------------------------------	%
+%	---------------------------	Pacotes Utilizados	-----------------------------	%
+%	-----------------------------------------------------------------------------	%
+
+%	-----------------------------------------------------------------------------	%
+%	-------------------------------	Definições	---------------------------------	%
+%	-----------------------------------------------------------------------------	%
+
+\setlength{\parindent}{1.3cm} 				% Espaçamento dos paragrafos
+\setlength{\parskip}{.2cm} 					% Distância entre paragrafos
+\setlength{\oddsidemargin}{0.5cm}   		% Há um offset obrigatorio de
+\setlength{\evensidemargin}{0.0cm}   		% 1 inch do lado esquerdo e no
+\setlength{\topmargin}{-1.2cm}       		% topo da folha
 \setlength{\headsep}{1.0cm}
 \setlength{\textwidth}{15.5cm}
 \setlength{\textheight}{24.2cm}
@@ -16,10 +24,14 @@
 \textbf{{\LARGE Introdução}} \\ \vspace{0.5cm}
 \end{center}
 
-\textit{Data Center} é um conjunto de recursos físicos (servidores, redes e \textit{storages}) dedicados que proporciona um alto poder computacional as telecomunicações, processamento, armazenamento e disponibilização de informações. Tais recursos requerem um alto investimento para serem implantados e mantidos e, para tantos gastos, é necessário a utilizão e otimização ao máximo dos dispositivos adiquiridos.
+\textit{Data Center} é um conjunto de recursos físicos (servidores, redes e \textit{storages} e etc.) dedicados que proporciona um alto poder computacional as telecomunicações, processamento, armazenamento e disponibilização de informações. Tais recursos requerem um alto investimento para serem implantados e mantidos, logo é necessário a utilizão e otimização ao máximo dos dispositivos adiquiridos.
 
-O \textit{data center} é composto de servidores distribuídos em \textit{racks} e a comunicação entre eles ocorre através de cabos e \textit{switches}(que gerência o tráfego de informações entre os dispositivos no mesmo), que são dispostos num devido local cuja a infraestrutura suporta o funcionamento de todos os equipamentos, provendo segurança, energia e controle de temperatura. O objetivo desses recursos estarem num mesmo espaço é trabalhar juntos para aumentar o poder computacional, sendo que cada componente dentro do mesmo pode ser reconhecido como servidor e/ou Sistema em Chip(\textit{System-on-a-Chip}(SoC)).
+O \textit{data center} é composto de servidores distribuídos em \textit{racks} e a comunicação entre eles ocorre através de cabos e \textit{switches}(que gerência o tráfego de informações entre os dispositivos), que são dispostos num devido local cuja a infraestrutura suporta o funcionamento de todos os equipamentos provendo segurança, energia e controle de temperatura. O objetivo desses recursos estarem num mesmo espaço é trabalhar juntos para aumentar o poder computacional, sendo que cada componente dentro do mesmo pode ser reconhecido como servidor e/ou Sistema em Chip(\textit{System-on-a-Chip}(SoC)).
 
-O SoC é o conjunto de componentes num computador(memória RAM, disco dígido e processador e etc.), ou outro sistema eletrônico e, que contenha uma determinada rotina e geralmente um Sistema Operacional(SO) para controlar as mesmas. Quando há mais de um processador dentro do SoC, denominado-se de Sistema em Chip com Multiprocessador(\textit{Multi-processor System-on-a-Chip}(MPSoC)), onde há uma hierarquia para acesso a memória, controle de entrada e saída de dados e distribuíção dos processos pelo SO, de uma ou várias aplicações, para os processadores do MPSoC, que se comunicam através de um Sistema de Intercomunicação(SI) chamado de Rede em Chip(Network-on-Chip(NoC)).
+O SoC é o conjunto de componentes como memória RAM, entrada e saída de dados, disco dígido, processador e etc., num computador ou outro sistema eletrônico e que contenha uma determinada rotina e geralmente um Sistema Operacional(SO) para controlar as mesmas. Os SoCs não estão limitados a computadores e estão presentes em outros disposítivos como smartphones, tablets, mouses e microcontroladores. Quando há mais de um processador num SoC, denomina-se Sistema em Chip com Multiprocessador(\textit{Multi-processor System-on-a-Chip}(MPSoC)), onde há controle de entrada e saída de dados, distribuíção dos processos pelo SO para os processadores do MPSoC. Também há admistração de acesso a memória, que acontece de maneira compartilhada ou distribuída, ou seja, na memória compartilhada vários processadores acessam o mesma memória, enquanto a distribuída cada um possui um bloco de memória específico. Esses processadores se comunicam através de um Sistema de Intercomunicação(SI) chamado de Rede em Chip(Network-on-Chip(NoC)), sendo que o diálogo entre esses eles para processar algo pode ser tanto entre os do mesmo SoC(Intra-Chip), quanto entre diferentes SoCs (Inter-Chip).
+
+O \textit{data center} é um ambiente de \textit{clusters} em \textit{rack}, sendo o \textit{cluster} um conjunto de servidores que funcionam como um, ou seja, dois ou mais SoCs se comunicam e se reconhecem como apenas um SoC.
+
+%falar de SI entre eles, entrar na IB e Eth. entrar na ENoC
 
 \end{document}
