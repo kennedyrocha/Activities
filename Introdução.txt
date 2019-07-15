@@ -4,10 +4,10 @@ SI = Sistema de Internexão
 --Detalhar muito muito muito bem SOC, MPSOC, NOC
 --Descrever um cernário inter rack (arquitetura, origanização, como o SI influência, influência no desempenho)
 --as aplicações
-enoc pode entrar nesse meio
-ela não é desse meio
+--enoc pode entrar nesse meio
+--ela não é desse meio
 como vai ser ela nesse meio?
-falar do custo de alteração de recursos - Quanto perde?
+--falar do custo de alteração de recursos - Quanto perde?
 
 
 --referenciar o computador fenix = sistema de internonexão
@@ -15,7 +15,7 @@ falar do custo de alteração de recursos - Quanto perde?
 
 --Porque IB? - fixa
 --Por que Eth?
-Por que ENoC?
+--Por que ENoC?
 
 --buscar artigo de NOC Inter rack
 
